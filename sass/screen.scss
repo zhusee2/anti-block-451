@@ -1,6 +1,7 @@
 // @import "compass/reset";
 
 @-webkit-keyframes blink-out {
+  //Best: duration 4000ms;
   0% { opacity: 1; }
 
   5% { opacity: 1; }
@@ -26,8 +27,10 @@
   100% { opacity: 0; }
 }
 
-@-webkit-keyframes blink {
+@-webkit-keyframes fade-off {
+  // Best: duration 1000ms;
   0% { opacity: 1; }
+  1% { opacity: .2; }
   100% { opacity: 0; }
 }
 
