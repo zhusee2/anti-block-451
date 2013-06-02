@@ -43,7 +43,8 @@ window.findLargestAreaElement = (elementsArray) ->
 
   areasArray = []
 
-  for index, element of elementsArray
+  for index in [0...elementsArray.length]
+    element = elementsArray[index]
     areaIndicator = {index: index, area: getElementArea(element)}
     areasArray.push(areaIndicator)
 
@@ -67,8 +68,11 @@ window.init = ->
 
   $(blinkOutElement).addClass('blink-out')
   $(blinkOutElement).on 'animationend.anti-block webkitAnimationEnd.anti-block', ->
+    shuffledElements = priorAnimateElements.shuffle()
+    cumulatedDelay = 0
     for element in priorAnimateElements
-      delay = Math.random() * 1000
-      $(element).css('animation-delay', "#{delay}ms")
+      $(element).css('animation-delay', "#{cumulatedDelay}ms")
       $(element).addClass('fade-off')
+      cumulatedDelay += 100
 
+  return undefined
