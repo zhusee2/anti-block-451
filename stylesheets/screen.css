@@ -1,0 +1,239 @@
+@-webkit-keyframes blink-out {
+  /* line 4, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 6, ../sass/screen.scss */
+  5% {
+    opacity: 1;
+  }
+
+  /* line 7, ../sass/screen.scss */
+  6.3% {
+    opacity: 0.3;
+  }
+
+  /* line 8, ../sass/screen.scss */
+  7% {
+    opacity: 1;
+  }
+
+  /* line 10, ../sass/screen.scss */
+  30% {
+    opacity: 1;
+  }
+
+  /* line 11, ../sass/screen.scss */
+  31.3% {
+    opacity: 0.3;
+  }
+
+  /* line 12, ../sass/screen.scss */
+  32% {
+    opacity: 1;
+  }
+
+  /* line 13, ../sass/screen.scss */
+  35% {
+    opacity: 1;
+  }
+
+  /* line 14, ../sass/screen.scss */
+  36.3% {
+    opacity: 0.3;
+  }
+
+  /* line 15, ../sass/screen.scss */
+  37% {
+    opacity: .85;
+  }
+
+  /* line 17, ../sass/screen.scss */
+  46% {
+    opacity: .85;
+  }
+
+  /* line 18, ../sass/screen.scss */
+  50% {
+    opacity: .77;
+  }
+
+  /* line 19, ../sass/screen.scss */
+  54% {
+    opacity: .85;
+  }
+
+  /* line 20, ../sass/screen.scss */
+  58% {
+    opacity: .77;
+  }
+
+  /* line 21, ../sass/screen.scss */
+  62% {
+    opacity: .85;
+  }
+
+  /* line 22, ../sass/screen.scss */
+  66% {
+    opacity: .77;
+  }
+
+  /* line 24, ../sass/screen.scss */
+  70% {
+    opacity: 1;
+  }
+
+  /* line 25, ../sass/screen.scss */
+  70.5% {
+    opacity: .15;
+  }
+
+  /* line 26, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink-out {
+  /* line 4, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 6, ../sass/screen.scss */
+  5% {
+    opacity: 1;
+  }
+
+  /* line 7, ../sass/screen.scss */
+  6.3% {
+    opacity: 0.3;
+  }
+
+  /* line 8, ../sass/screen.scss */
+  7% {
+    opacity: 1;
+  }
+
+  /* line 10, ../sass/screen.scss */
+  30% {
+    opacity: 1;
+  }
+
+  /* line 11, ../sass/screen.scss */
+  31.3% {
+    opacity: 0.3;
+  }
+
+  /* line 12, ../sass/screen.scss */
+  32% {
+    opacity: 1;
+  }
+
+  /* line 13, ../sass/screen.scss */
+  35% {
+    opacity: 1;
+  }
+
+  /* line 14, ../sass/screen.scss */
+  36.3% {
+    opacity: 0.3;
+  }
+
+  /* line 15, ../sass/screen.scss */
+  37% {
+    opacity: .85;
+  }
+
+  /* line 17, ../sass/screen.scss */
+  46% {
+    opacity: .85;
+  }
+
+  /* line 18, ../sass/screen.scss */
+  50% {
+    opacity: .77;
+  }
+
+  /* line 19, ../sass/screen.scss */
+  54% {
+    opacity: .85;
+  }
+
+  /* line 20, ../sass/screen.scss */
+  58% {
+    opacity: .77;
+  }
+
+  /* line 21, ../sass/screen.scss */
+  62% {
+    opacity: .85;
+  }
+
+  /* line 22, ../sass/screen.scss */
+  66% {
+    opacity: .77;
+  }
+
+  /* line 24, ../sass/screen.scss */
+  70% {
+    opacity: 1;
+  }
+
+  /* line 25, ../sass/screen.scss */
+  70.5% {
+    opacity: .15;
+  }
+
+  /* line 26, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-off {
+  /* line 30, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 31, ../sass/screen.scss */
+  0.5% {
+    opacity: .15;
+  }
+
+  /* line 32, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-off {
+  /* line 30, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 31, ../sass/screen.scss */
+  0.5% {
+    opacity: .15;
+  }
+
+  /* line 32, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+/* line 35, ../sass/screen.scss */
+.blink-out {
+  -webkit-animation: blink-out 4000ms 1000ms both;
+  animation: blink-out 4000ms 1000ms both;
+}
+
+/* line 38, ../sass/screen.scss */
+.fade-off {
+  -webkit-animation: fade-off 1000ms both;
+  animation: fade-off 1000ms both;
+}

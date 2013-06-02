@@ -1,6 +1,7 @@
 .DS_Store
 fire_app_log.txt
+.config.rb
 .sass-cache/
 .coffeescript-cache/
-stylesheets/
-javascripts/
+sass/
+coffeescripts/
