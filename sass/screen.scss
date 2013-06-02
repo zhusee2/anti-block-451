@@ -5,23 +5,23 @@
 
   5% { opacity: 1; }
   6.3% { opacity: 0.3; }
-  9% { opacity: 1; }
+  7% { opacity: 1; }
 
   30% { opacity: 1; }
   31.3% { opacity: 0.3; }
-  34% { opacity: .8; }
+  32% { opacity: 1; }
+  35% { opacity: 1; }
   36.3% { opacity: 0.3; }
-  38% { opacity: .8; }
+  37% { opacity: .85; }
 
-  42% { opacity: .7; }
-  46% { opacity: .8; }
-  50% { opacity: .7; }
-  54% { opacity: .8; }
-  58% { opacity: .7; }
-  62% { opacity: .8; }
-  66% { opacity: .7; }
+  46% { opacity: .85; }
+  50% { opacity: .77; }
+  54% { opacity: .85; }
+  58% { opacity: .77; }
+  62% { opacity: .85; }
+  66% { opacity: .77; }
 
-  70% { opacity: .8; }
+  70% { opacity: 1; }
   70.5% { opacity: 0.2; }
   100% { opacity: 0; }
 }
@@ -42,5 +42,5 @@
   top: 50%; left: 50%;
   margin-top: -$size/2;
   margin-left: -$size/2;
-  -webkit-animation: blink-out 5000ms 500ms both;
+  -webkit-animation: blink-out 4000ms 500ms both;
 }
