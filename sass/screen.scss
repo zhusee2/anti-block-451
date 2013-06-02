@@ -36,5 +36,5 @@
   @include animation(blink-out 4000ms 500ms both);
 }
 .fade-off {
-  @include animation(fade-off 1000ms 500ms both);
+  @include animation(fade-off 1000ms both);
 }
