@@ -1,3 +1,20 @@
+Array.prototype.shuffle = ->
+  # Shuffle an Array with the Fisher Yates Algorithm from:
+  # http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+  suffleArray = (workingArray) ->
+    i = workingArray.length
+    return false if i is 0
+
+    while --i
+      j = Math.floor( Math.random() * (i + 1) )
+      temp = workingArray[i]
+      workingArray[i] = workingArray[j]
+      workingArray[j] = temp
+
+    return workingArray
+
+  return suffleArray(@)
+
 window.findElementsInViewport = ->
   viewportBoundary = {
     top: window.scrollY
