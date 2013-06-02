@@ -11,3 +11,18 @@
   -webkit-animation: $property;
   animation: $property;
 }
+
+@mixin centering-parent {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+
+@mixin centered-child {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -79,6 +79,8 @@ init = ->
 
 
 $ ->
-  $('article').on 'click.anti-block', ->
+  $('.btn-start-tour').on 'click.anti-block', (event) ->
     init()
-    $('article').off 'click.anti-block'
+    $(@).off('.anti-block')
+    $('.welcome-modal').addClass('hide')
+    event.preventDefault()
