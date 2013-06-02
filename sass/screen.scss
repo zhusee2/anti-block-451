@@ -1,1 +1,46 @@
 // @import "compass/reset";
+
+@-webkit-keyframes blink-out {
+  0% { opacity: 1; }
+
+  5% { opacity: 1; }
+  6.3% { opacity: 0.3; }
+  9% { opacity: 1; }
+
+  30% { opacity: 1; }
+  31.3% { opacity: 0.3; }
+  34% { opacity: .8; }
+  36.3% { opacity: 0.3; }
+  38% { opacity: .8; }
+
+  42% { opacity: .7; }
+  46% { opacity: .8; }
+  50% { opacity: .7; }
+  54% { opacity: .8; }
+  58% { opacity: .7; }
+  62% { opacity: .8; }
+  66% { opacity: .7; }
+
+  70% { opacity: .8; }
+  70.5% { opacity: 0.2; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.test {
+  $size: 260px;
+
+  width: $size;
+  height: $size;
+  background-color: transparentize(orange, 0.5);
+  border: 2px solid orange;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -$size/2;
+  margin-left: -$size/2;
+  -webkit-animation: blink-out 5000ms 500ms both;
+}
