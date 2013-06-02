@@ -101,9 +101,11 @@
   };
 
   $(function() {
-    return $('article').on('click.anti-block', function() {
+    return $('.btn-start-tour').on('click.anti-block', function(event) {
       init();
-      return $('article').off('click.anti-block');
+      $(this).off('.anti-block');
+      $('.welcome-modal').addClass('hide');
+      return event.preventDefault();
     });
   });
 
