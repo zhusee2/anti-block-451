@@ -22,18 +22,18 @@
   66% { opacity: .77; }
 
   70% { opacity: 1; }
-  70.5% { opacity: 0.2; }
+  70.5% { opacity: .15; }
   100% { opacity: 0; }
 }
 
 @include keyframes(fade-off) {
   0% { opacity: 1; }
-  0.5% { opacity: .3; }
+  0.5% { opacity: .15; }
   100% { opacity: 0; }
 }
 
 .blink-out {
-  @include animation(blink-out 4000ms 500ms both);
+  @include animation(blink-out 4000ms 1000ms both);
 }
 .fade-off {
   @include animation(fade-off 1000ms both);

@@ -15,7 +15,7 @@ Array.prototype.shuffle = ->
 
   return suffleArray(@)
 
-window.findElementsInViewport = ->
+findElementsInViewport = ->
   viewportBoundary = {
     top: window.scrollY
     right: window.scrollX + window.innerWidth
@@ -35,7 +35,7 @@ window.findElementsInViewport = ->
 
   return elementsInViewport
 
-window.findLargestAreaElement = (elementsArray) ->
+findLargestAreaElement = (elementsArray) ->
   getElementArea = (element) ->
     width = $(element).width()
     height = $(element).height()
@@ -60,7 +60,7 @@ window.findLargestAreaElement = (elementsArray) ->
 
   return result
 
-window.init = ->
+init = ->
   priorAnimateElements = findElementsInViewport()
   largestElementResult = findLargestAreaElement(priorAnimateElements)
   blinkOutElement = largestElementResult.element
@@ -76,3 +76,9 @@ window.init = ->
       cumulatedDelay += 100
 
   return undefined
+
+
+$ ->
+  $('article').on 'click.anti-block', ->
+    init()
+    $('article').off 'click.anti-block'
