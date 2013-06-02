@@ -1,7 +1,6 @@
-// @import "compass/reset";
+@import "mixins";
 
-@-webkit-keyframes blink-out {
-  //Best: duration 4000ms;
+@include keyframes(blink-out) {
   0% { opacity: 1; }
 
   5% { opacity: 1; }
@@ -27,23 +26,15 @@
   100% { opacity: 0; }
 }
 
-@-webkit-keyframes fade-off {
-  // Best: duration 1000ms;
+@include keyframes(fade-off) {
   0% { opacity: 1; }
   1% { opacity: .2; }
   100% { opacity: 0; }
 }
 
-.test {
-  $size: 260px;
-
-  width: $size;
-  height: $size;
-  background-color: transparentize(orange, 0.5);
-  border: 2px solid orange;
-  position: absolute;
-  top: 50%; left: 50%;
-  margin-top: -$size/2;
-  margin-left: -$size/2;
-  -webkit-animation: blink-out 4000ms 500ms both;
+.blink-out {
+  @include animation(blink-out 4000ms 500ms both);
+}
+.fade-off {
+  @include animation(fade-off 1000ms 500ms both);
 }
